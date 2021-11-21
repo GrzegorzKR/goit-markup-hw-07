@@ -71,7 +71,6 @@ button {
   font-size: 26px;
   line-height: 1.192;
   letter-spacing: 0.03em;
-  color: var(--main-color);
 }
 
 .logo__accent-text {
@@ -190,7 +189,7 @@ button {
   color: #ffffff;
 }
 
-.blue-btn {
+.btn {
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -198,7 +197,6 @@ button {
   width: 200px;
   height: 50px;
 
-  background: var(--main-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
 
@@ -212,6 +210,10 @@ button {
 
   color: #ffffff;
 }
+.color-btn {
+  background: var(--main-color);
+}
+
 /* =========== END MAIN PAGE HEADER===========*/
 
 /* =========== MAIN SECTION MAIN PAGE===========*/
@@ -395,54 +397,28 @@ h2 {
 }
 
 /*footer*/
-footer {
+.footer {
   padding-top: 60px;
   padding-bottom: 60px;
   background: #2f303a;
 }
 
-footer a {
-  color: rgba(255, 255, 255, 0.6);
+.logo_dark-theme {
+  color: #fff;
 }
-footer .container {
+
+.footer .container {
   justify-content: flex-start;
-  display: flex;
   align-items: baseline;
 }
-.logo-footer {
-  font-family: Raleway;
-  font-weight: bold;
-  font-size: 26px;
-  line-height: 1.192;
-  letter-spacing: 0.03em;
-  color: var(--main-color);
-}
 
-.logo-footer > span {
-  color: white;
-}
-.contact-footer-mail,
-.contact-footer-mail {
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.contact-footer-mail:hover,
-.contact-footer-mail:focus,
-.contact-footer-phone:hover,
-.contact-footer-phone:focus {
-  color: var(--main-color);
-}
-.contact-footer {
-  margin-top: 9px;
-}
-.contact-footer-item {
-  margin-top: 9px;
-}
 .contacts {
   margin-right: 70px;
 }
-.adres-footer {
+
+.contacts__adres {
   margin-top: 20px;
+  margin-bottom: 9px;
   font-family: var(--main-font);
   font-style: normal;
   font-size: 14px;
@@ -450,8 +426,26 @@ footer .container {
   letter-spacing: 0.03em;
   color: #ffffff;
 }
-.social-list-footer-title,
-.newsletter-in-footer-title {
+
+.contacts__list-item {
+  margin-top: 9px;
+}
+.contacts__list-link {
+  color: rgba(255, 255, 255, 0.6);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.contacts__list-link:hover,
+.contacts__list-link:focus {
+  color: var(--main-color);
+}
+
+.adres__list-item {
+  margin-top: 9px;
+}
+
+.socials-footer-title,
+.newsletter__title {
   font-family: var(--main-font);
   font-weight: 700;
   text-transform: uppercase;
@@ -461,11 +455,11 @@ footer .container {
   margin-bottom: 20px;
   margin-top: 0;
 }
-.social-list-footer {
+.socials-list {
   display: flex;
   fill: white;
 }
-.social-list-footer-link {
+.socials-list__link {
   display: flex;
   width: 44px;
   height: 44px;
@@ -476,28 +470,28 @@ footer .container {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.social-list-footer-link:hover {
+.socials-list__link:hover {
   background-color: var(--main-color);
 }
-.social-list-footer-item {
+.socials-list__item {
   margin-right: 10px;
 }
-.social-list-footer-item:last-child {
+.socials-list__item:last-child {
   margin-right: 0;
 }
-.newsletter-in-footer {
+.newsletter {
   margin-left: 78px;
 }
 
-.newsletter-input-container {
+.newsletter__wrapper {
   display: flex;
 }
 
-.newsletter-in-footer button {
+.newsletter button {
   margin-top: 0;
 }
 
-.newsletter-input {
+.newsletter__input {
   display: flex;
   width: 358px;
   height: 50px;
@@ -508,7 +502,7 @@ footer .container {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
 }
 
-.newsletter-input input {
+.newsletter__input .input {
   color: #fff;
   border: none;
   background-color: transparent;
@@ -520,7 +514,7 @@ footer .container {
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
-.newsletter-icon {
+.btn-icon {
   margin-left: 24px;
 }
 
@@ -741,6 +735,9 @@ footer .container {
   fill: var(--main-color);
   border-color: var(--main-color);
 }
+input {
+  outline: none;
+}
 
 .signup-form-input input {
   width: 100%;
@@ -753,6 +750,7 @@ footer .container {
 }
 
 .signup-form-textarea {
+  outline: none;
   height: 120px;
   width: 100%;
   resize: none;

@@ -66,7 +66,7 @@
         <div class="container">
           <div class="header____">
             <h1 class="header-tittle">EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</h1>
-            <button class="blue-btn modal-btn" type="button" data-modal-open>Zamów usługe</button>
+            <button class="btn color-btn  modal-btn" type="button" data-modal-open>Zamów usługe</button>
           </div>
         </div>
       </section>
@@ -387,52 +387,52 @@
     </main>
 
     <!--FOOTER-->
-    <footer>
+    <footer class="footer">
       <div class="container">
         <!--Section with contacts-->
         <div class="contacts">
-          <a class="logo-footer link" href="/">Web<span>Studio</span></a>
-          <address class="adres-footer">m. Warszawa, Aleje Jerozolimskie 21 <br /></address>
-          <ul class="contact-footer list">
-            <li class="contact-footer-item">
-              <a class="contact-footer-mail link" href="mailto:info@example.com"
+          <a class="logo logo_dark-theme link" href="index.html"><span class="logo__accent-text">Web</span>Studio</a>
+          <address class="contacts__adres">m. Warszawa, Aleje Jerozolimskie 21 <br /></address>
+          <ul class="contacts__list list">
+            <li class="contacts__list-item">
+              <a class="contacts__list-link link" href="mailto:info@example.com"
                 >info@example.com</a
               >
             </li>
-            <li class="contact-footer-item">
-              <a class="contact-footer-phone link" href="tel:+48111111111">+48 111 111 111</a>
+            <li class="contacts__list-item">
+              <a class="contacts__list-link link" href="tel:+48111111111">+48 111 111 111</a>
             </li>
           </ul>
         </div>
 
         <!--Section with social media-->
-        <div class="social-in-footer">
-          <p class="social-list-footer-title">Dołącz do nas</p>
-          <ul class="social-list-footer list">
-            <li class="social-list-footer-item icon-link">
-              <a class="social-list-footer-link" href="#">
+        <div class="socials-footer">
+          <p class="socials-footer-title">Dołącz do nas</p>
+          <ul class="socials-list list">
+            <li class="socials-list__item">
+              <a class="socials-list__link" href="#">
                 <svg class="social-icon" width="20" height="20">
                   <use href="./images/icons.svg#icon-instagram"></use>
                 </svg>
               </a>
             </li>
-            <li class="social-list-footer-item icon-link">
-              <a class="social-list-footer-link" href="#">
-                <svg class="social-icon" width="20" height="20">
+            <li class="socials-list__item">
+              <a class="socials-list__link" href="#">
+                <svg class="socials-list__icon" width="20" height="20">
                   <use href="./images/icons.svg#icon-tweeter"></use>
                 </svg>
               </a>
             </li>
-            <li class="social-list-footer-item icon-link">
-              <a class="social-list-footer-link" href="#">
-                <svg class="social-icon" width="20" height="20">
+            <li class="socials-list__item">
+              <a class="socials-list__link" href="#">
+                <svg class="socials-list__icon" width="20" height="20">
                   <use href="./images/icons.svg#icon-facebook"></use>
                 </svg>
               </a>
             </li>
-            <li class="social-list-footer-item icon-link">
-              <a class="social-list-footer-link" href="#">
-                <svg class="social-icon" width="20" height="20">
+            <li class="socials-list__item">
+              <a class="socials-list__link" href="#">
+                <svg class="socials-list__icon" width="20" height="20">
                   <use href="./images/icons.svg#icon-linkedin"></use>
                 </svg>
               </a>
@@ -441,17 +441,17 @@
         </div>
 
         <!--Newsletter section-->
-        <form
-          name="newsletter-in-footer-form"
+        <form class="newsletter-form"
+          name="newsletter-form"
           method="post"
           action="javascript:void(0);"
           novalidate
         >
-          <div class="newsletter-in-footer">
-            <p class="newsletter-in-footer-title">Zapisz się do newslettera</p>
-            <div class="newsletter-input-container">
-              <div class="newsletter-input">
-                <input
+          <div class="newsletter">
+            <p class="newsletter__title">Zapisz się do newslettera</p>
+            <div class="newsletter__wrapper">
+              <div class="newsletter__input">
+                <input class="input"
                   type="email"
                   name="newsletter-email"
                   id="newsletter-email"
@@ -459,9 +459,9 @@
                   maxlength="40"
                 />
               </div>
-              <button type="submit" class="blue-btn">
+              <button type="submit" class="btn color-btn">
                 Zapisz się
-                <svg class="newsletter-icon" width="24" height="24">
+                <svg class="btn-icon" width="24" height="24">
                   <use href="./images/icons.svg#icon-icon-send"></use>
                 </svg>
               </button>
@@ -506,7 +506,7 @@
               <svg class="signup-form-icon" width="12" height="12">
                 <use href="./images/icons.svg#icon-name-form"></use>
               </svg>
-              <input type="text" name="user-name" id="user-name" maxlength="20" />
+              <input class="input" type="text" name="user-name" id="user-name" maxlength="20" />
             </div>
 
             <label class="signup-form-label" for="phone-user">Telefon</label>
@@ -514,7 +514,7 @@
               <svg class="signup-form-icon" width="13" height="13">
                 <use href="./images/icons.svg#icon-phone-form"></use>
               </svg>
-              <input type="tel" name="phone-user" id="phone-user" maxlength="15" />
+              <input class="input" type="tel" name="phone-user" id="phone-user" maxlength="15" />
             </div>
 
             <label class="signup-form-label" for="email-user">Email</label>
@@ -522,7 +522,7 @@
               <svg class="signup-form-icon" width="15" height="12">
                 <use href="./images/icons.svg#icon-mail-form"></use>
               </svg>
-              <input type="email" name="email-user" id="email-user" maxlength="40" />
+              <input class="input" type="email" name="email-user" id="email-user" maxlength="40" />
             </div>
 
             <label class="signup-form-label" for="comment">Komentarz</label>
@@ -546,7 +546,7 @@
                 <a href="#">Politykę Prywatności</a>
               </span>
             </label>
-            <button class="blue-btn" type="submit">Wyślij</button>
+            <button class="btn color-btn " type="submit">Wyślij</button>
           </form>
         </div>
       </div>
