@@ -19,53 +19,52 @@
   </head>
 
   <body>
-    <header class="menu">
+    <!-- BEM HEADER-->
+    <header class="header">
       <div class="container">
-        <div class="menu-wrapper">
-          <a class="logo-header link" href="index.html">Web<span>Studio</span></a>
+        <a class="logo logo_light-theme link" href="index.html"
+          ><span class="logo__accent-text">Web</span>Studio</a
+        >
 
-          <!--Menu-->
-          <nav class="navigation">
-            <ul class="navigation-list list">
-              <li class="navigation-list-item">
-                <a class="navigation-link link current-page" href="index.html">Agencja</a>
-              </li>
-              <li class="navigation-list-item">
-                <a class="navigation-link link" href="portfolio.html">Porfolio</a>
-              </li>
-              <li class="navigation-list-item">
-                <a class="navigation-link link" href="#">Kontakt</a>
-              </li>
-            </ul>
-          </nav>
-
-          <!--Contacts link-->
-          <ul class="contact-list list">
-            <li>
-              <a class="contact-mail link" href="mailto:info@devstudio.com">
-                <svg class="contact-mail-icon" width="16" height="12">
-                  <use href="./images/icons.svg#icon-envelope"></use></svg
-                >info@devstudio.com</a
-              >
+        <nav class="navigation">
+          <ul class="menu list">
+            <li class="menu__item">
+              <a class="menu__link link menu__link_active" href="index.html">Agencja</a>
             </li>
-            <li>
-              <a class="contact-phone link" href="tel:+48111111111">
-                <svg class="contact-phone-icon" width="10" height="16">
-                  <use href="./images/icons.svg#icon-smartphone"></use>
-                </svg>
-                +48 111 111 111</a
-              >
+            <li class="menu__item">
+              <a class="menu__link link" href="portfolio.html">Porfolio</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link link" href="#">Kontakt</a>
             </li>
           </ul>
-        </div>
+        </nav>
+
+        <ul class="contact list">
+          <li class="contact__item">
+            <a class="contact__link link" href="mailto:info@devstudio.com">
+              <svg class="contact__item-icon" width="16" height="12">
+                <use href="./images/icons.svg#icon-envelope"></use></svg
+              >info@devstudio.com</a
+            >
+          </li>
+          <li class="contact__item">
+            <a class="contact__link link" href="tel:+48111111111">
+              <svg class="contact__item-icon" width="10" height="16">
+                <use href="./images/icons.svg#icon-smartphone"></use>
+              </svg>
+              +48 111 111 111</a
+            >
+          </li>
+        </ul>
       </div>
     </header>
 
     <main>
-      <!--HEADER-->
+      <!--HERO-->
       <section class="hero-section">
         <div class="container">
-          <div class="header">
+          <div class="header____">
             <h1 class="header-tittle">EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</h1>
             <button class="blue-btn modal-btn" type="button" data-modal-open>Zamów usługe</button>
           </div>
