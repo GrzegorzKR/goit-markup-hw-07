@@ -25,7 +25,7 @@ img {
   display: block;
 }
 
-figure {
+.figure {
   margin: 0;
 }
 .list {
@@ -556,7 +556,6 @@ button {
   color: #ffffff;
 }
 /*Projects*/
-
 
 .cards {
   display: flex;
