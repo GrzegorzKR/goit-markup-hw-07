@@ -13,7 +13,7 @@
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-  color: var(--font-color);
+  color: $font-color;
   margin-bottom: 10px;
 }
 
@@ -35,7 +35,7 @@
 }
 
 .cards__item figcaption {
-  font-family: var(--main-font);
+  font-family: $main-font;
   font-size: 16px;
   letter-spacing: 0.03em;
   color: #757575;
@@ -48,7 +48,7 @@
   overflow: hidden;
 }
 .cards__description {
-  font-family: var(--main-font);
+  font-family: $main-font;
   color: #ffffff;
   font-size: 18px;
   line-height: 1.556;

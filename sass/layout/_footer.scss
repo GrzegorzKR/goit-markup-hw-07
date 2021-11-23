@@ -20,7 +20,7 @@
 .contacts__adres {
   margin-top: 20px;
   margin-bottom: 9px;
-  font-family: var(--main-font);
+  font-family: $main-font;
   font-style: normal;
   font-size: 14px;
   line-height: 1.714;
@@ -38,7 +38,7 @@
 
 .contacts__list-link:hover,
 .contacts__list-link:focus {
-  color: var(--main-color);
+  color: $main-color;
 }
 
 .adres__list-item {
@@ -47,7 +47,7 @@
 
 .socials-footer__title,
 .newsletter__title {
-  font-family: var(--main-font);
+  font-family: $main-font;
   font-weight: 700;
   text-transform: uppercase;
   color: #ffffff;
@@ -88,8 +88,7 @@
   padding: 15px 16px;
 }
 #newsletter-email::placeholder {
-  font-family: var(--main-font);
+  font-family: $main-font;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
-

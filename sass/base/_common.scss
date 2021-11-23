@@ -1,13 +1,6 @@
-:root {
-  --main-font: 'Roboto', sans-serif;
-  --secondary-font: 'Raleway', sans-serif;
-  --main-color: #2196f3;
-  --font-color: #212121;
-}
-
 body {
-  font-family: var(--main-font);
-  color: var(--font-color);
+  font-family: $main-font;
+  color: $font-color;
 }
 
 h1,

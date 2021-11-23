@@ -2,7 +2,7 @@
   padding-top: 24px;
   padding-bottom: 25px;
   margin-right: 93px;
-  font-family: var(--secondary-font);
+  font-family: $secondary-font;
   font-weight: bold;
   font-size: 26px;
   line-height: 1.192;
@@ -10,7 +10,7 @@
 }
 
 .logo__accent-text {
-  color: var(--main-color);
+  color: $main-color;
 }
 .logo_light-theme {
   color: black;

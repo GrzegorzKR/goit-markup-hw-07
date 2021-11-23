@@ -15,7 +15,7 @@
 
 .feauters__heading {
   margin-bottom: 10px;
-  font-family: var(--main-font);
+  font-family: $main-font;
   font-size: 14px;
   line-height: 1.142;
   font-weight: 700;
@@ -24,7 +24,7 @@
   text-transform: uppercase;
 }
 .feauters__description {
-  font-family: var(--main-font);
+  font-family: $main-font;
   font-size: 14px;
   line-height: 1.714;
   color: #757575;
