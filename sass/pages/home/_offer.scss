@@ -17,29 +17,28 @@
 .offer__list {
   display: flex;
   justify-content: center;
-}
-.offer__list-item:not(:last-child) {
-  margin-right: 30px;
-}
-.offer__list:last-child {
-  margin-right: 0;
-}
-.offer__list-img {
-  position: relative;
-}
 
-.offer__list-signature {
-  position: absolute;
-  bottom: 0;
-  padding: 27px 0;
-  width: 100%;
-  background-color: rgba(47, 48, 58, 0.8);
-  font-style: $main-font;
-  font-weight: bold;
-  color: #ffffff;
-  font-size: 14px;
-  line-height: 1.142;
-  text-align: center;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
+  &-item:not(:last-child) {
+    margin-right: 30px;
+  }
+  
+  &-img {
+    position: relative;
+  }
+
+  &-signature {
+    position: absolute;
+    bottom: 0;
+    padding: 27px 0;
+    width: 100%;
+    background-color: rgba(47, 48, 58, 0.8);
+    font-style: $main-font;
+    font-weight: bold;
+    color: #ffffff;
+    font-size: 14px;
+    line-height: 1.142;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+  }
 }

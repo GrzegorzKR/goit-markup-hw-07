@@ -4,41 +4,32 @@
   background: #2f303a;
 }
 
-.logo_dark-theme {
-  color: #fff;
-}
-
-.footer .container {
-  justify-content: flex-start;
-  align-items: baseline;
-}
-
 .contacts {
   margin-right: 70px;
-}
 
-.contacts__adres {
-  margin-top: 20px;
-  margin-bottom: 9px;
-  font-family: $main-font;
-  font-style: normal;
-  font-size: 14px;
-  line-height: 1.714;
-  letter-spacing: 0.03em;
-  color: #ffffff;
-}
+  &__adres {
+    margin-top: 20px;
+    margin-bottom: 9px;
+    font-family: $main-font;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.714;
+    letter-spacing: 0.03em;
+    color: #ffffff;
+  }
 
-.contacts__list-item {
-  margin-top: 9px;
-}
-.contacts__list-link {
-  color: rgba(255, 255, 255, 0.6);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.contacts__list-link:hover,
-.contacts__list-link:focus {
-  color: $main-color;
+  &-item {
+    margin-top: 9px;
+  }
+  
+  &__list-link {
+    color: rgba(255, 255, 255, 0.6);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+      color: $main-color;
+    }
+  }
 }
 
 .adres__list-item {
@@ -59,35 +50,32 @@
 
 .newsletter {
   margin-left: 78px;
+
+  &__wrapper {
+    display: flex;
+  }
+
+  &__input {
+    display: flex;
+    width: 358px;
+    height: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    margin-right: 12px;
+    background-color: #2f303a;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+
+    & .input {
+      color: #fff;
+      border: none;
+      background-color: transparent;
+      width: 100%;
+      padding: 15px 16px;
+    }
+  }
 }
 
-.newsletter__wrapper {
-  display: flex;
-}
-
-.newsletter button {
-  margin-top: 0;
-}
-
-.newsletter__input {
-  display: flex;
-  width: 358px;
-  height: 50px;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  border-radius: 4px;
-  margin-right: 12px;
-  background-color: #2f303a;
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-}
-
-.newsletter__input .input {
-  color: #fff;
-  border: none;
-  background-color: transparent;
-  width: 100%;
-  padding: 15px 16px;
-}
-#newsletter-email::placeholder {
+.input::placeholder {
   font-family: $main-font;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
